@@ -1,0 +1,14 @@
+{
+    "name": "dummy-team/wp-installer",
+    "description": "Wordpress installer via composer",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grégory Copin",
+            "email": "gregcop1@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
