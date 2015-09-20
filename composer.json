@@ -1,7 +1,7 @@
 {
   "name": "dummy-team/wp-installer",
   "description": "Wordpress installer via composer",
-  "type": "project",
+  "type": "composer-plugin",
   "license": "MIT",
   "authors": [
     {
@@ -10,6 +10,7 @@
     }
   ],
   "minimum-stability": "stable",
+  "keywords": [ "wordpress", "installer" ],
   "require": {
     "wordpress/wordpress": "~4.3",
     "fancyguy/webroot-installer": "1.0.0"
