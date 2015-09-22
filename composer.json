@@ -52,9 +52,6 @@
     }
   },
   "scripts": {
-    "post-create-project-cmd": [
-      "DummyTeam\\WpInstallerComposerScripts\\Parameters::build"
-    ],
     "post-install-cmd": [
       "DummyTeam\\WpInstallerComposerScripts\\Parameters::build"
     ],
