@@ -12,9 +12,9 @@
   "minimum-stability": "stable",
   "keywords": [ "wordpress", "installer" ],
   "require": {
-    "wordpress/wordpress": "~4.3",
+    "wordpress/wordpress": "^4.3",
     "fancyguy/webroot-installer": "1.0.0",
-    "dummy-team/wp-installer-composer-scripts": "^0.3.1"
+    "dummy-team/wp-installer-composer-scripts": "^0.4.0"
   },
   "require-dev": {
   },
@@ -47,13 +47,16 @@
     "webroot-dir": "web/wp",
     "webroot-package": "wordpress/wordpress",
     "dummyteam-parameters": {
-      "parameter-file": "web/wp/wp-config-sample.php",
-      "destination-folder": "web/"
+      "destination-folder": "web/",
+      "wordpress-folder": "wp/",
+      "wp-content-folder": "content/",
+      "parameter-file": "wp-config-sample.php"
     }
   },
   "scripts": {
     "post-create-project-cmd": [
-        "DummyTeam\\WpInstallerComposerScripts\\Git::build"
+        "DummyTeam\\WpInstallerComposerScripts\\Git::build",
+        "DummyTeam\\WpInstallerComposerScripts\\Structure::build"
     ],
     "post-install-cmd": [
       "DummyTeam\\WpInstallerComposerScripts\\Parameters::build"
